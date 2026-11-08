@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yazdan Shaikh Academy | Master Digital Skills & Deen Foundations</title>
+  <meta name="description" content="Learn high-income digital skills like Video Editing, Content Creation & Freelancing alongside authentic Quranic Arabic and Tajweed with mentor Yazdan Shaikh.">
+  <meta name="keywords" content="Yazdan Shaikh, Yazdan Academy, Video Editing Course, Learn Arabic, Tajweed, Freelancing, Islamic Skills, Online Academy">
+  <meta property="og:title" content="Yazdan Shaikh Academy | Learn. Build. Elevate.">
+  <meta property="og:description" content="Join thousands of students mastering high-income digital crafts and spiritual excellence under Yazdan Shaikh's live mentorship.">
+  <meta property="og:url" content="https://yazdanshaikhacademy.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Cinzel"', 'serif'],
+            arabic: ['"Amiri"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            },
+            gold: {
+              300: '#fde047',
+              400: '#facc15',
+              500: '#eab308',
+              600: '#ca8a04',
+            },
+            dark: {
+              900: '#0B0F17',
+              850: '#111726',
+              800: '#161F33',
+              700: '#1E2942',
+              600: '#2C3A5B',
+            }
+          },
+          boxShadow: {
+            'glow': '0 0 40px -10px rgba(16, 185, 129, 0.35)',
+            'glow-gold': '0 0 35px -8px rgba(234, 179, 8, 0.35)',
+            'card': '0 12px 35px -10px rgba(0, 0, 0, 0.5)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark-900 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white relative overflow-x-hidden">
+
+  <!-- Background Ambient Glows -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-500/10 rounded-full blur-[130px]"></div>
+    <div class="absolute top-1/3 -right-40 w-[450px] h-[450px] bg-gold-500/10 rounded-full blur-[150px]"></div>
+    <div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-brand-600/10 rounded-full blur-[160px]"></div>
+  </div>
+
+  <!-- Top Announcement Bar -->
+  <div class="relative z-50 bg-gradient-to-r from-brand-900 via-dark-800 to-dark-850 border-b border-brand-500/20 py-2.5 px-4 text-xs md:text-sm text-center font-medium">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-brand-500/20 text-brand-300 text-xs font-semibold uppercase tracking-wider border border-brand-400/30">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-400 animate-ping"></span>
+        Cohort Enrollment Open
+      </span>
+      <span class="text-slate-300">New batch starting soon: Video Editing Mastery & Arabic Foundations.</span>
+      <a href="#courses" class="inline-flex items-center gap-1 text-gold-400 hover:text-gold-300 font-semibold underline underline-offset-4 ml-1 transition">
+        Claim Your Seat <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-dark-900/80 border-b border-slate-800/80 transition-all duration-300" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-600 via-brand-500 to-gold-400 p-[2px] shadow-glow group-hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full bg-dark-900 rounded-[10px] flex items-center justify-center">
+              <span class="font-display font-bold text-xl bg-gradient-to-r from-emerald-300 to-gold-400 bg-clip-text text-transparent">YS</span>
+            </div>
+          </div>
+          <div>
+            <span class="block font-display font-bold text-lg md:text-xl tracking-tight text-white group-hover:text-brand-300 transition-colors">
+              YAZDAN SHAIKH
+            </span>
+            <span class="block text-[11px] tracking-widest text-slate-400 uppercase -mt-1 font-semibold">
+              ACADEMY
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#about" class="hover:text-brand-400 transition-colors">About</a>
+          <a href="#courses" class="hover:text-brand-400 transition-colors">Courses</a>
+          <a href="#why-us" class="hover:text-brand-400 transition-colors">Why Yazdan Academy</a>
+          <a href="#curriculum" class="hover:text-brand-400 transition-colors">Curriculum</a>
+          <a href="#community" class="hover:text-brand-400 transition-colors">Community</a>
+          <a href="#faq" class="hover:text-brand-400 transition-colors">FAQ</a>
+        </nav>
+
+        <!-- Action Buttons & Socials -->
+        <div class="hidden md:flex items-center gap-4">
+          <!-- Social Icons -->
+          <div class="flex items-center gap-2 border-r border-slate-700/80 pr-4">
+            <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" rel="noopener noreferrer" 
+               class="p-2 rounded-lg bg-dark-800 hover:bg-red-500/20 text-slate-400 hover:text-red-400 transition-all" title="YouTube Channel">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.instagram.com/yazdanacademy" target="_blank" rel="noopener noreferrer" 
+               class="p-2 rounded-lg bg-dark-800 hover:bg-pink-500/20 text-slate-400 hover:text-pink-400 transition-all" title="Instagram Profile">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <button onclick="openEnrollModal('General Inquiry')" 
+                  class="relative group overflow-hidden rounded-xl p-px font-semibold text-sm transition-all duration-300 shadow-glow hover:shadow-emerald-500/50">
+            <span class="absolute inset-0 bg-gradient-to-r from-brand-500 via-teal-400 to-gold-400 group-hover:opacity-90 transition-opacity"></span>
+            <span class="relative block px-5 py-2.5 rounded-[11px] bg-dark-900 group-hover:bg-dark-850 text-white transition-colors flex items-center gap-2">
+              <span>Enroll Now</span>
+              <i data-lucide="sparkles" class="w-4 h-4 text-gold-400"></i>
+            </span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-lg bg-dark-800 text-slate-300 hover:text-white" aria-label="Toggle menu">
+          <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-dark-900/95 backdrop-blur-2xl px-6 py-6 space-y-4">
+      <a href="#about" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">About Yazdan</a>
+      <a href="#courses" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Our Courses</a>
+      <a href="#why-us" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Why Us</a>
+      <a href="#curriculum" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Curriculum Breakdown</a>
+      <a href="#community" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Community & Channels</a>
+      <a href="#faq" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">FAQ</a>
+
+      <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" class="p-2 rounded-lg bg-dark-800 text-red-400">
+            <i data-lucide="youtube" class="w-5 h-5"></i>
+          </a>
+          <a href="https://www.instagram.com/yazdanacademy" target="_blank" class="p-2 rounded-lg bg-dark-800 text-pink-400">
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+          </a>
+        </div>
+        <button onclick="openEnrollModal('Mobile Menu')" class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm">
+          Join Next Batch
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-dark-800/90 border border-brand-500/30 text-xs md:text-sm text-brand-300 shadow-inner">
+              <span class="flex h-2 w-2 rounded-full bg-emerald-400"></span>
+              <span>Mentorship by Yazdan Shaikh • Dunya & Deen Harmony</span>
+            </div>
+
+            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+              Master <span class="bg-gradient-to-r from-brand-300 via-emerald-400 to-gold-400 bg-clip-text text-transparent">High-Income Skills</span> With Faith & Purpose.
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Learn practical, market-ready digital crafts — from <strong>Pro Video Editing & Freelancing</strong> to foundational <strong>Quranic Arabic & Tajweed</strong>. Transform your financial future while staying rooted in your authentic values.
+            </p>
+
+            <!-- Dual CTA & Social Proof -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <button onclick="openEnrollModal('Hero Section')" 
+                      class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-base shadow-glow flex items-center justify-center gap-2 group transition-all duration-300">
+                <span>Start Learning Today</span>
+                <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+              </button>
+              
+              <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" rel="noopener noreferrer"
+                 class="w-full sm:w-auto px-6 py-4 rounded-xl bg-dark-800 hover:bg-dark-750 text-slate-200 border border-slate-700/80 hover:border-brand-500/50 font-semibold text-base flex items-center justify-center gap-2.5 transition-all">
+                <i data-lucide="play-circle" class="w-5 h-5 text-red-500"></i>
+                <span>Watch Free Lessons</span>
+              </a>
+            </div>
+
+            <!-- Social Media Quick Channels -->
+            <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400">
+              <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" class="flex items-center gap-2 hover:text-white transition">
+                <span class="w-7 h-7 rounded-full bg-red-500/10 text-red-400 flex items-center justify-center">
+                  <i data-lucide="youtube" class="w-4 h-4"></i>
+                </span>
+                <span>@yazdanshaikhacademy</span>
+              </a>
+              <a href="https://www.instagram.com/yazdanacademy" target="_blank" class="flex items-center gap-2 hover:text-white transition">
+                <span class="w-7 h-7 rounded-full bg-pink-500/10 text-pink-400 flex items-center justify-center">
+                  <i data-lucide="instagram" class="w-4 h-4"></i>
+                </span>
+                <span>@yazdanacademy</span>
+              </a>
+              <div class="flex items-center gap-1.5 text-gold-400 font-medium">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                <span>100% Halal & Ethical Growth</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual Card / Showcase -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Glow backdrop behind card -->
+              <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-500 to-gold-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+
+              <div class="relative rounded-2xl bg-dark-850/90 border border-slate-700/80 shadow-card p-6 backdrop-blur-xl space-y-6">
+                
+                <!-- Badge & Header -->
+                <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-500 to-gold-400 p-0.5">
+                      <div class="w-full h-full rounded-full bg-dark-900 flex items-center justify-center font-display font-bold text-white text-lg">
+                        YS
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-white text-base">Yazdan Shaikh</h3>
+                      <p class="text-xs text-brand-400 font-medium">Founder & Head Mentor</p>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-md bg-brand-500/10 text-brand-400 text-xs font-semibold border border-brand-500/20">
+                    Live Cohorts
+                  </span>
+                </div>
+
+                <!-- Featured Pill Highlights -->
+                <div class="space-y-3">
+                  <div class="p-3.5 rounded-xl bg-dark-800/80 border border-slate-700/50 flex items-center gap-3.5 hover:border-brand-500/40 transition">
+                    <div class="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400">
+                      <i data-lucide="video" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-semibold text-white">Full-Stack Video Editing</h4>
+                      <p class="text-xs text-slate-400">Premiere Pro, CapCut PC, Retention Storytelling</p>
+                    </div>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-dark-800/80 border border-slate-700/50 flex items-center gap-3.5 hover:border-gold-500/40 transition">
+                    <div class="p-2.5 rounded-lg bg-gold-500/10 text-gold-400">
+                      <i data-lucide="book-open" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-semibold text-white">Arabic & Quranic Tajweed</h4>
+                      <p class="text-xs text-slate-400">Understand the Quran directly with pure clarity</p>
+                    </div>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-dark-800/80 border border-slate-700/50 flex items-center gap-3.5 hover:border-brand-500/40 transition">
+                    <div class="p-2.5 rounded-lg bg-teal-500/10 text-teal-400">
+                      <i data-lucide="briefcase" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-semibold text-white">Freelance Client Acquisition</h4>
+                      <p class="text-xs text-slate-400">Turn video skills into recurring monthly income</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mini Live Stats -->
+                <div class="grid grid-cols-3 gap-2 pt-2 text-center border-t border-slate-800">
+                  <div class="p-2 rounded-lg bg-dark-900/60">
+                    <p class="text-base font-bold text-brand-400">100K+</p>
+                    <p class="text-[10px] text-slate-400 font-medium">Followers</p>
+                  </div>
+                  <div class="p-2 rounded-lg bg-dark-900/60">
+                    <p class="text-base font-bold text-gold-400">5,000+</p>
+                    <p class="text-[10px] text-slate-400 font-medium">Students</p>
+                  </div>
+                  <div class="p-2 rounded-lg bg-dark-900/60">
+                    <p class="text-base font-bold text-white">4.9 ★</p>
+                    <p class="text-[10px] text-slate-400 font-medium">Course Rating</p>
+                  </div>
+                </div>
+
+                <!-- Card CTA -->
+                <button onclick="openEnrollModal('Quick Card')" class="w-full py-3 rounded-xl bg-brand-500/20 hover:bg-brand-500 text-brand-300 hover:text-white border border-brand-500/40 text-sm font-semibold transition-all duration-200">
+                  Join Batch Waiting List →
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BANNER SECTION -->
+    <section class="py-10 bg-dark-850/60 border-y border-slate-800 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-800">
+          
+          <div class="p-2">
+            <span class="block font-display text-3xl sm:text-4xl font-extrabold text-brand-400" data-counter="5000">5,000+</span>
+            <span class="text-xs sm:text-sm text-slate-400 mt-1 block">Active Students & Learners</span>
+          </div>
+
+          <div class="p-2 pt-6 md:pt-2">
+            <span class="block font-display text-3xl sm:text-4xl font-extrabold text-gold-400" data-counter="100">100K+</span>
+            <span class="text-xs sm:text-sm text-slate-400 mt-1 block">Community Across Socials</span>
+          </div>
+
+          <div class="p-2 pt-6 md:pt-2">
+            <span class="block font-display text-3xl sm:text-4xl font-extrabold text-emerald-400">92%</span>
+            <span class="text-xs sm:text-sm text-slate-400 mt-1 block">Practical Project Completion</span>
+          </div>
+
+          <div class="p-2 pt-6 md:pt-2">
+            <span class="block font-display text-3xl sm:text-4xl font-extrabold text-slate-100">1-on-1</span>
+            <span class="text-xs sm:text-sm text-slate-400 mt-1 block">Dedicated Mentor Support</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT YAZDAN SHAIKH SECTION -->
+    <section id="about" class="py-24 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Image & Brand Box -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden border-2 border-brand-500/30 p-2 bg-gradient-to-b from-brand-900/30 via-dark-800 to-dark-900 shadow-glow">
+              <div class="aspect-[4/5] rounded-2xl bg-dark-800 flex flex-col justify-end p-6 relative overflow-hidden">
+                <!-- Decorative Graphic -->
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-900/40 to-transparent z-10"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                  <span class="font-arabic text-8xl text-brand-300">يَزْدَان</span>
+                </div>
+                
+                <!-- Overlay details -->
+                <div class="relative z-20 space-y-2">
+                  <span class="px-3 py-1 rounded-full bg-brand-500 text-dark-900 text-xs font-bold uppercase tracking-wider inline-block">
+                    Founder & Educator
+                  </span>
+                  <h3 class="font-display text-2xl font-bold text-white">Yazdan Shaikh</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Digital Creator, Educator & Youth Mentor dedicated to bringing digital self-reliance and spiritual character into modern homes.
+                  </p>
+                  
+                  <div class="pt-3 flex items-center gap-3">
+                    <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" class="text-xs font-semibold text-brand-400 flex items-center gap-1 hover:underline">
+                      <i data-lucide="youtube" class="w-4 h-4 text-red-500"></i> YouTube Channel
+                    </a>
+                    <span class="text-slate-600">•</span>
+                    <a href="https://www.instagram.com/yazdanacademy" target="_blank" class="text-xs font-semibold text-brand-400 flex items-center gap-1 hover:underline">
+                      <i data-lucide="instagram" class="w-4 h-4 text-pink-500"></i> @yazdanacademy
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story & Philosophy -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-semibold uppercase tracking-wider">
+              The Vision Behind The Academy
+            </div>
+
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white leading-tight">
+              "We Don't Just Teach Tools. We Build Independent, Principled Creators."
+            </h2>
+
+            <div class="space-y-4 text-slate-300 text-base leading-relaxed">
+              <p>
+                In today's fast-moving creator economy, thousands of young students, job seekers, and homemakers struggle between wanting to earn an honest, dignified income and remaining true to their core Islamic ethics.
+              </p>
+              <p>
+                <strong>Yazdan Shaikh Academy</strong> was founded to bridge this exact gap. We combine <strong>high-demand creative digital mastery</strong> (video editing, digital storytelling, content strategy) with <strong>authentic Deen foundations</strong> (Quranic Arabic, Tajweed, ethics of earning, and personal discipline).
+              </p>
+              <p class="border-l-2 border-brand-400 pl-4 py-1 italic text-slate-200">
+                "Our mission is to help 10,000+ Muslims become financially empowered through ethical freelancing, while reading and understanding the Holy Quran with clarity and conviction."
+              </p>
+            </div>
+
+            <!-- 3 Pillars -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-dark-800/60 border border-slate-700/60">
+                <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center mb-2">
+                  <i data-lucide="zap" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-bold text-white text-sm">Real-World Skills</h4>
+                <p class="text-xs text-slate-400 mt-1">Practical tools like Premiere Pro & CapCut to land freelance clients.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-dark-800/60 border border-slate-700/60">
+                <div class="w-8 h-8 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center mb-2">
+                  <i data-lucide="heart" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-bold text-white text-sm">Spiritual Elevation</h4>
+                <p class="text-xs text-slate-400 mt-1">Step-by-step Arabic grammar & Tajweed directly linked to Quran.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-dark-800/60 border border-slate-700/60">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center mb-2">
+                  <i data-lucide="users" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-bold text-white text-sm">Live Mentorship</h4>
+                <p class="text-xs text-slate-400 mt-1">Direct feedback, project reviews, and community accountability.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES SHOWCASE SECTION -->
+    <section id="courses" class="py-24 bg-dark-850/40 relative border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-semibold uppercase tracking-wider">
+            Flagship Programs
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+            Choose Your Learning Path
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            Structured, step-by-step cohort curriculums designed for absolute beginners to intermediate learners.
+          </p>
+
+          <!-- Course Filter Tabs -->
+          <div class="flex items-center justify-center gap-2 pt-6">
+            <button class="course-tab-btn active px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-brand-500 text-white shadow-glow" data-filter="all">
+              All Courses
+            </button>
+            <button class="course-tab-btn px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-dark-800 text-slate-300 hover:text-white" data-filter="digital">
+              🎬 Digital Skills
+            </button>
+            <button class="course-tab-btn px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-dark-800 text-slate-300 hover:text-white" data-filter="islamic">
+              📖 Arabic & Deen
+            </button>
+          </div>
+        </div>
+
+        <!-- Courses Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- COURSE 1: VIDEO EDITING MASTERY -->
+          <div class="course-card group rounded-2xl bg-dark-800/90 border border-slate-700/80 hover:border-brand-500/60 p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 shadow-card" data-category="digital">
+            <div class="space-y-5">
+              
+              <!-- Tag and Badge -->
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-brand-500/20 text-brand-300 border border-brand-500/30 text-xs font-bold uppercase tracking-wider">
+                  🔥 Most Enrolled
+                </span>
+                <span class="text-xs text-slate-400 font-medium flex items-center gap-1">
+                  <i data-lucide="clock" class="w-3.5 h-3.5 text-brand-400"></i> 6 Weeks Cohort
+                </span>
+              </div>
+
+              <!-- Course Title & Description -->
+              <div>
+                <h3 class="font-display text-xl font-bold text-white group-hover:text-brand-300 transition-colors">
+                  Full-Stack Video Editing & Freelancing
+                </h3>
+                <p class="text-slate-400 text-xs sm:text-sm mt-2 line-clamp-3 leading-relaxed">
+                  Go from zero editing knowledge to crafting viral reels, YouTube documentarians, sound design, color grading, and landing paying freelance clients.
+                </p>
+              </div>
+
+              <!-- Curriculum Highlights -->
+              <div class="space-y-2.5 pt-2 border-t border-slate-700/60">
+                <span class="text-xs font-semibold uppercase text-slate-400 tracking-wider block">What You'll Learn:</span>
+                <ul class="text-xs text-slate-300 space-y-2">
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                    <span>Premiere Pro & CapCut PC from beginner to pro</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                    <span>Retention editing: Hooks, zooms, pacing & graphics</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                    <span>SFX, audio mixing & cinematic color grading</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                    <span>Finding clients on Instagram, Upwork & cold email</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tools Badge -->
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Premiere Pro</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">CapCut</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Photoshop Basics</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Sound Design</span>
+              </div>
+
+            </div>
+
+            <!-- Card Bottom Action -->
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center justify-between">
+              <div>
+                <span class="block text-[11px] text-slate-400">Live Mentorship</span>
+                <span class="font-bold text-white text-lg">Next Batch Soon</span>
+              </div>
+              <button onclick="openEnrollModal('Full-Stack Video Editing & Freelancing')" 
+                      class="px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-xs sm:text-sm flex items-center gap-1.5 transition">
+                <span>Enroll Now</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- COURSE 2: QURANIC ARABIC & TAJWEED -->
+          <div class="course-card group rounded-2xl bg-dark-800/90 border border-slate-700/80 hover:border-gold-500/60 p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 shadow-card" data-category="islamic">
+            <div class="space-y-5">
+              
+              <!-- Tag and Badge -->
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 border border-gold-500/30 text-xs font-bold uppercase tracking-wider">
+                  📖 Deen Foundation
+                </span>
+                <span class="text-xs text-slate-400 font-medium flex items-center gap-1">
+                  <i data-lucide="clock" class="w-3.5 h-3.5 text-gold-400"></i> 8 Weeks Cohort
+                </span>
+              </div>
+
+              <!-- Course Title & Description -->
+              <div>
+                <h3 class="font-display text-xl font-bold text-white group-hover:text-gold-300 transition-colors">
+                  Quranic Arabic & Tajweed Mastery
+                </h3>
+                <p class="text-slate-400 text-xs sm:text-sm mt-2 line-clamp-3 leading-relaxed">
+                  Learn to read, recite with accurate Tajweed pronunciation, and comprehend the core Quranic vocabulary without relying solely on translations.
+                </p>
+              </div>
+
+              <!-- Curriculum Highlights -->
+              <div class="space-y-2.5 pt-2 border-t border-slate-700/60">
+                <span class="text-xs font-semibold uppercase text-slate-400 tracking-wider block">What You'll Learn:</span>
+                <ul class="text-xs text-slate-300 space-y-2">
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                    <span>Makharij & Tajweed rules step-by-step</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                    <span>Essential Quranic Grammar (Nahw & Sarf simplified)</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                    <span>Frequent Quranic root words & vocabulary</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                    <span>Live recitation correction & personal feedback</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tools / Method Badge -->
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Noorani Qaida</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Tajweed Rules</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Quran Analysis</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Live Correction</span>
+              </div>
+
+            </div>
+
+            <!-- Card Bottom Action -->
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center justify-between">
+              <div>
+                <span class="block text-[11px] text-slate-400">Beginner Friendly</span>
+                <span class="font-bold text-white text-lg">Next Batch Soon</span>
+              </div>
+              <button onclick="openEnrollModal('Quranic Arabic & Tajweed Mastery')" 
+                      class="px-4 py-2.5 rounded-xl bg-gold-500 hover:bg-gold-600 text-dark-900 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition">
+                <span>Enroll Now</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- COURSE 3: CONTENT CREATION & PERSONAL BRANDING -->
+          <div class="course-card group rounded-2xl bg-dark-800/90 border border-slate-700/80 hover:border-teal-500/60 p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 shadow-card" data-category="digital">
+            <div class="space-y-5">
+              
+              <!-- Tag and Badge -->
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 border border-teal-500/30 text-xs font-bold uppercase tracking-wider">
+                  🚀 Growth Track
+                </span>
+                <span class="text-xs text-slate-400 font-medium flex items-center gap-1">
+                  <i data-lucide="clock" class="w-3.5 h-3.5 text-teal-400"></i> 4 Weeks Sprint
+                </span>
+              </div>
+
+              <!-- Course Title & Description -->
+              <div>
+                <h3 class="font-display text-xl font-bold text-white group-hover:text-teal-300 transition-colors">
+                  Content Creation & Ethical Branding
+                </h3>
+                <p class="text-slate-400 text-xs sm:text-sm mt-2 line-clamp-3 leading-relaxed">
+                  How Yazdan built 100K+ engaged followers: scriptwriting, camera confidence, reel formats, thumbnail design, and ethical monetization without compromising values.
+                </p>
+              </div>
+
+              <!-- Curriculum Highlights -->
+              <div class="space-y-2.5 pt-2 border-t border-slate-700/60">
+                <span class="text-xs font-semibold uppercase text-slate-400 tracking-wider block">What You'll Learn:</span>
+                <ul class="text-xs text-slate-300 space-y-2">
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-teal-400 shrink-0"></i>
+                    <span>Finding your niche & authentic personal story</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-teal-400 shrink-0"></i>
+                    <span>The Anatomy of Viral Instagram Reels & YouTube Shorts</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-teal-400 shrink-0"></i>
+                    <span>Lighting, smartphone framing & mic setup</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-teal-400 shrink-0"></i>
+                    <span>Ethical brand sponsorships & digital product sales</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tools Badge -->
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">YouTube</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Instagram</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Scripting</span>
+                <span class="px-2 py-0.5 rounded bg-dark-900 text-[11px] text-slate-400 font-medium">Analytics</span>
+              </div>
+
+            </div>
+
+            <!-- Card Bottom Action -->
+            <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center justify-between">
+              <div>
+                <span class="block text-[11px] text-slate-400">Creator Intensive</span>
+                <span class="font-bold text-white text-lg">Next Batch Soon</span>
+              </div>
+              <button onclick="openEnrollModal('Content Creation & Ethical Branding')" 
+                      class="px-4 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-600 text-white font-semibold text-xs sm:text-sm flex items-center gap-1.5 transition">
+                <span>Enroll Now</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE YAZDAN ACADEMY -->
+    <section id="why-us" class="py-24 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-semibold uppercase tracking-wider">
+            The Yazdan Difference
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+            Why Hundreds of Learners Trust Yazdan Shaikh
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            Unlike generic course aggregators, we provide end-to-end guidance from skill acquisition to your first client check.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Feature 1 -->
+          <div class="p-8 rounded-2xl bg-dark-850/80 border border-slate-800 hover:border-brand-500/40 transition group">
+            <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="laptop" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">100% Practical & Project-Based</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              No endless boring theory. You create portfolio-ready video edits and analyze real Quranic verses from day one.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="p-8 rounded-2xl bg-dark-850/80 border border-slate-800 hover:border-gold-500/40 transition group">
+            <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Halal & Ethical Monetization</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Learn how to filter clients, avoid non-compliant industries, and build a sustainable, barakah-filled income stream.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="p-8 rounded-2xl bg-dark-850/80 border border-slate-800 hover:border-teal-500/40 transition group">
+            <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="message-square" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Live Q&A and Portfolio Review</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Get your video edits and Tajweed pronunciations reviewed personally during interactive live weekend sessions.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="p-8 rounded-2xl bg-dark-850/80 border border-slate-800 hover:border-brand-500/40 transition group">
+            <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Private Student Community</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Join our dedicated network of students, collaborate on gigs, share project files, and find accountability partners.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="p-8 rounded-2xl bg-dark-850/80 border border-slate-800 hover:border-gold-500/40 transition group">
+            <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="file-text" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Ready-To-Use Client Templates</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Get Yazdan’s personal cold outreach scripts, proposal documents, invoice templates, and price negotiation guides.
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="p-8 rounded-2xl bg-dark-850/80 border border-slate-800 hover:border-teal-500/40 transition group">
+            <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="repeat" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Lifetime Access & Updates</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Never get left behind. Access newly added tutorials, software updates, and masterclasses at no extra fee.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CURRICULUM ROADMAP SECTION -->
+    <section id="curriculum" class="py-24 bg-dark-850/40 border-t border-slate-800 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-semibold uppercase tracking-wider">
+            Step-By-Step Journey
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+            The 4-Stage Mastery Roadmap
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            How we guide a complete beginner from initial setup to generating freelance income with confidence.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+          
+          <!-- Stage 1 -->
+          <div class="p-6 rounded-2xl bg-dark-800/90 border border-slate-700/80 relative space-y-4">
+            <div class="w-10 h-10 rounded-full bg-brand-500 text-dark-900 font-bold font-display flex items-center justify-center text-lg">
+              01
+            </div>
+            <h3 class="text-lg font-bold text-white">Foundations & Tool Mastery</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Setting up Premiere Pro / CapCut, understanding timeline shortcuts, cutting, basic transitions, and organizing project assets cleanly.
+            </p>
+            <div class="text-xs text-brand-400 font-semibold">Weeks 1 - 2</div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="p-6 rounded-2xl bg-dark-800/90 border border-slate-700/80 relative space-y-4">
+            <div class="w-10 h-10 rounded-full bg-teal-500 text-dark-900 font-bold font-display flex items-center justify-center text-lg">
+              02
+            </div>
+            <h3 class="text-lg font-bold text-white">Advanced Storytelling & SFX</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Retention-based hooks, dynamic captions, sound design layers, keyframe animations, speed ramps, and color correction.
+            </p>
+            <div class="text-xs text-teal-400 font-semibold">Weeks 3 - 4</div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="p-6 rounded-2xl bg-dark-800/90 border border-slate-700/80 relative space-y-4">
+            <div class="w-10 h-10 rounded-full bg-gold-400 text-dark-900 font-bold font-display flex items-center justify-center text-lg">
+              03
+            </div>
+            <h3 class="text-lg font-bold text-white">Showreel & Portfolio Creation</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Building 3 high-retention sample edits that prove your skill. Creating an impressive Behance / Google Drive showreel link.
+            </p>
+            <div class="text-xs text-gold-400 font-semibold">Week 5</div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="p-6 rounded-2xl bg-dark-800/90 border border-slate-700/80 relative space-y-4">
+            <div class="w-10 h-10 rounded-full bg-emerald-400 text-dark-900 font-bold font-display flex items-center justify-center text-lg">
+              04
+            </div>
+            <h3 class="text-lg font-bold text-white">Client Acquisition & Invoicing</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Cold emailing creators, Instagram DM strategies, pricing your retainer, contracts, receiving international payments, and ethical delivery.
+            </p>
+            <div class="text-xs text-emerald-400 font-semibold">Week 6 & Beyond</div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 text-center">
+          <button onclick="openEnrollModal('Curriculum Roadmap')" 
+                  class="px-8 py-4 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm shadow-glow transition inline-flex items-center gap-2">
+            <span>Download Detailed Syllabus & Join Cohort</span>
+            <i data-lucide="download" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STUDENT TESTIMONIALS & SUCCESS STORIES -->
+    <section class="py-24 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-semibold uppercase tracking-wider">
+            Real Transformations
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+            Hear From Our Students
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            From beginners and college students to homemakers — see how our students are creating value.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="p-6 rounded-2xl bg-dark-850/90 border border-slate-800 p-6 flex flex-col justify-between space-y-4 shadow-card">
+            <div class="space-y-3">
+              <div class="flex text-gold-400 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+              </div>
+              <p class="text-slate-300 text-sm italic leading-relaxed">
+                "I had zero video editing background. Brother Yazdan breaks down Premiere Pro so clearly. Within 3 weeks after the course, I closed my first client for ₹18,000/month editing YouTube shorts!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+              <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-300 font-bold flex items-center justify-center text-sm">
+                ZA
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Zaid Ahmed</h4>
+                <p class="text-xs text-slate-400">Freelance Video Editor, Mumbai</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="p-6 rounded-2xl bg-dark-850/90 border border-slate-800 p-6 flex flex-col justify-between space-y-4 shadow-card">
+            <div class="space-y-3">
+              <div class="flex text-gold-400 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+              </div>
+              <p class="text-slate-300 text-sm italic leading-relaxed">
+                "The Arabic & Tajweed series changed my relationship with the Holy Quran. I can finally recite with proper Makharij rules and understand repetitive Quranic vocabulary without feeling lost. Alhumdulillah!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+              <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-300 font-bold flex items-center justify-center text-sm">
+                FK
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Farhana Khan</h4>
+                <p class="text-xs text-slate-400">Homemaker & Arabic Student, Hyderabad</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="p-6 rounded-2xl bg-dark-850/90 border border-slate-800 p-6 flex flex-col justify-between space-y-4 shadow-card">
+            <div class="space-y-3">
+              <div class="flex text-gold-400 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+              </div>
+              <p class="text-slate-300 text-sm italic leading-relaxed">
+                "Yazdan Shaikh doesn't just sell a course and disappear. His Sunday community reviews and honest feedback on our edits helped me refine my pacing and land international creator contracts."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+              <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 font-bold flex items-center justify-center text-sm">
+                SM
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Salman Malik</h4>
+                <p class="text-xs text-slate-400">Content Creator & Student, Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMMUNITY & SOCIAL CHANNELS SECTION -->
+    <section id="community" class="py-24 bg-dark-850/50 border-t border-slate-800 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-3xl bg-gradient-to-br from-brand-950 via-dark-850 to-dark-900 border border-brand-500/30 p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-glow">
+          
+          <!-- Background decoration -->
+          <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-4">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-bold uppercase tracking-wider">
+                Join The Movement
+              </span>
+              <h2 class="font-display text-3xl sm:text-4xl font-bold text-white leading-tight">
+                Connect With Our Global Learning Community
+              </h2>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+                Watch free daily tutorials, breakdown reels, student showcase edits, and Quranic Arabic lessons on our official YouTube channel and Instagram page.
+              </p>
+
+              <!-- Social Buttons -->
+              <div class="pt-4 flex flex-wrap gap-4">
+                <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" rel="noopener noreferrer" 
+                   class="px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-sm flex items-center gap-2.5 transition shadow-lg shadow-red-600/30">
+                  <i data-lucide="youtube" class="w-5 h-5"></i>
+                  <span>Subscribe on YouTube</span>
+                </a>
+
+                <a href="https://www.instagram.com/yazdanacademy" target="_blank" rel="noopener noreferrer" 
+                   class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:opacity-95 text-white font-bold text-sm flex items-center gap-2.5 transition shadow-lg shadow-pink-600/30">
+                  <i data-lucide="instagram" class="w-5 h-5"></i>
+                  <span>Follow @yazdanacademy</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Side Card with Verified stats -->
+            <div class="lg:col-span-4 bg-dark-900/90 rounded-2xl border border-slate-700/80 p-6 space-y-4 text-center">
+              <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-brand-500 to-gold-400 mx-auto p-0.5">
+                <div class="w-full h-full rounded-full bg-dark-900 flex items-center justify-center font-display font-bold text-white text-xl">
+                  YS
+                </div>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Official Yazdan Shaikh Academy</h4>
+                <p class="text-xs text-brand-400 font-medium">yazdanshaikhacademy.com</p>
+              </div>
+              <div class="pt-2 text-xs text-slate-400 border-t border-slate-800">
+                Direct access to curated project assets, preset packs, and live batch reminders.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-24 relative overflow-hidden">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-semibold uppercase tracking-wider">
+            Got Questions?
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            Everything you need to know about the courses, batch timings, and mentorship.
+          </p>
+        </div>
+
+        <!-- Accordions -->
+        <div class="space-y-4" id="faq-accordion">
+          
+          <div class="faq-item rounded-xl bg-dark-850/80 border border-slate-800 overflow-hidden">
+            <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-300 transition">
+              <span>Do I need a high-end expensive PC/laptop to learn video editing?</span>
+              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-300 hidden leading-relaxed border-t border-slate-800/60 pt-3">
+              No! We teach workflows optimized for normal laptops. For basic to intermediate edits, free tools like CapCut for PC run smoothly even on modest laptops. As you start landing paying clients, you can gradually reinvest into higher specs.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl bg-dark-850/80 border border-slate-800 overflow-hidden">
+            <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-300 transition">
+              <span>Can beginners with zero Arabic knowledge join the Quranic Arabic track?</span>
+              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-300 hidden leading-relaxed border-t border-slate-800/60 pt-3">
+              Absolutely. The Arabic track starts from ground zero — letter recognition, articulation points (Makharij), and Noorani Qaida rules before moving to word-by-word Quranic sentence comprehension.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl bg-dark-850/80 border border-slate-800 overflow-hidden">
+            <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-300 transition">
+              <span>Are classes recorded if I miss a live session?</span>
+              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-300 hidden leading-relaxed border-t border-slate-800/60 pt-3">
+              Yes, all live sessions are recorded in high-definition and uploaded to the private student portal within 24 hours. You get lifetime access to rewatch anytime at your own pace.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl bg-dark-850/80 border border-slate-800 overflow-hidden">
+            <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-300 transition">
+              <span>How will this help me land freelance clients?</span>
+              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-300 hidden leading-relaxed border-t border-slate-800/60 pt-3">
+              Unlike theoretical courses, we dedicate a full module to client acquisition: writing cold outreach messages that get replies, packaging your portfolio showreel, setting up contracts, and pricing retainers for Instagram & YouTube creators.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl bg-dark-850/80 border border-slate-800 overflow-hidden">
+            <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-300 transition">
+              <span>How can I register and get admission details?</span>
+              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-300 hidden leading-relaxed border-t border-slate-800/60 pt-3">
+              Click on the "Enroll Now" or "Join Next Batch" button anywhere on this page, fill in your details, and our academy admissions coordinator will WhatsApp you the curriculum PDF, fee structure, and batch schedule.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA BANNER -->
+    <section class="py-20 relative bg-gradient-to-b from-dark-900 to-dark-950 border-t border-slate-800">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+          Ready To Upgrade Your Skills & Build Your Future?
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
+          Seats for our upcoming live cohorts are limited to ensure personalized attention and feedback. Reserve your spot today.
+        </p>
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="openEnrollModal('Bottom CTA')" 
+                  class="w-full sm:w-auto px-10 py-4 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-base shadow-glow flex items-center justify-center gap-2 transition duration-300">
+            <span>Apply For The Next Batch</span>
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </button>
+          <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" 
+             class="w-full sm:w-auto px-8 py-4 rounded-xl bg-dark-800 hover:bg-dark-750 text-slate-300 border border-slate-700 font-semibold text-base transition flex items-center justify-center gap-2">
+            <i data-lucide="youtube" class="w-5 h-5 text-red-500"></i>
+            <span>Explore YouTube Free Lessons</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark-950 border-t border-slate-800/80 py-12 relative z-10 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-brand-500 to-gold-400 p-0.5">
+              <div class="w-full h-full bg-dark-900 rounded-[6px] flex items-center justify-center font-display font-bold text-white text-base">
+                YS
+              </div>
+            </div>
+            <span class="font-display font-bold text-lg text-white">YAZDAN SHAIKH ACADEMY</span>
+          </div>
+          <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+            An online skill-development and values mentorship platform empowering modern learners with high-income freelance abilities and authentic Quranic education.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" class="w-9 h-9 rounded-lg bg-dark-850 hover:bg-red-500/20 text-slate-400 hover:text-red-400 flex items-center justify-center transition">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.instagram.com/yazdanacademy" target="_blank" class="w-9 h-9 rounded-lg bg-dark-850 hover:bg-pink-500/20 text-slate-400 hover:text-pink-400 flex items-center justify-center transition">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://yazdanshaikhacademy.com/" class="w-9 h-9 rounded-lg bg-dark-850 hover:bg-brand-500/20 text-slate-400 hover:text-brand-400 flex items-center justify-center transition">
+              <i data-lucide="globe" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#about" class="hover:text-brand-400 transition">About Yazdan</a></li>
+            <li><a href="#courses" class="hover:text-brand-400 transition">Video Editing Course</a></li>
+            <li><a href="#courses" class="hover:text-brand-400 transition">Quranic Arabic & Tajweed</a></li>
+            <li><a href="#curriculum" class="hover:text-brand-400 transition">Syllabus Breakdown</a></li>
+            <li><a href="#faq" class="hover:text-brand-400 transition">Student FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Official Channels -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider">Official Channels</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="https://yazdanshaikhacademy.com/" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="external-link" class="w-3.5 h-3.5"></i> yazdanshaikhacademy.com</a></li>
+            <li><a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="youtube" class="w-3.5 h-3.5 text-red-400"></i> @yazdanshaikhacademy</a></li>
+            <li><a href="https://www.instagram.com/yazdanacademy" target="_blank" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="instagram" class="w-3.5 h-3.5 text-pink-400"></i> @yazdanacademy</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 text-xs flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400">
+        <p>© 2026 Yazdan Shaikh Academy. All Rights Reserved.</p>
+        <p class="flex items-center gap-4">
+          <span>Empowering Deen & Dunya</span>
+          <span>•</span>
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <span>•</span>
+          <a href="#" class="hover:underline">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ENROLLMENT MODAL DIALOG -->
+  <div id="enroll-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-950/80 backdrop-blur-md hidden transition-opacity duration-300">
+    <div class="relative w-full max-w-lg rounded-2xl bg-dark-850 border border-slate-700/80 shadow-2xl p-6 sm:p-8 overflow-hidden">
+      
+      <!-- Modal Close Button -->
+      <button onclick="closeEnrollModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-1 rounded-lg hover:bg-dark-800 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-semibold">
+          🚀 Admissions Open
+        </div>
+        
+        <h3 class="font-display text-2xl font-bold text-white">Join The Next Batch</h3>
+        <p class="text-xs sm:text-sm text-slate-300">
+          Enter your details below to receive batch schedule, syllabus PDF, and early bird discounts directly on your WhatsApp.
+        </p>
+
+        <form id="enrollment-form" class="space-y-4 pt-2">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1" for="user-name">Full Name *</label>
+            <input type="text" id="user-name" required placeholder="e.g. Farhan Shaikh" 
+                   class="w-full px-4 py-2.5 rounded-xl bg-dark-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1" for="user-email">Email Address *</label>
+            <input type="email" id="user-email" required placeholder="farhan@example.com" 
+                   class="w-full px-4 py-2.5 rounded-xl bg-dark-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1" for="user-phone">WhatsApp Number (with Country Code) *</label>
+            <input type="tel" id="user-phone" required placeholder="+91 98765 43210" 
+                   class="w-full px-4 py-2.5 rounded-xl bg-dark-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1" for="course-interest">Interested Program *</label>
+            <select id="course-interest" class="w-full px-4 py-2.5 rounded-xl bg-dark-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+              <option value="Full-Stack Video Editing & Freelancing">Full-Stack Video Editing & Freelancing</option>
+              <option value="Quranic Arabic & Tajweed Mastery">Quranic Arabic & Tajweed Mastery</option>
+              <option value="Content Creation & Ethical Branding">Content Creation & Ethical Branding</option>
+              <option value="Both Digital Skills & Arabic Course">Combo (Digital Skills + Arabic Course)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-sm shadow-glow transition duration-200">
+            Submit & Get Course Details
+          </button>
+        </form>
+
+        <p class="text-[11px] text-slate-400 text-center">
+          🔒 We respect your privacy. No spam guaranteed.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 rounded-xl bg-brand-600 text-white px-5 py-3.5 shadow-2xl flex items-center gap-3 text-sm font-medium">
+    <i data-lucide="check-circle" class="w-5 h-5 text-white"></i>
+    <span id="toast-message">Application received! We'll message you on WhatsApp.</span>
+  </div>
+
+  <!-- FLOATING ACTION BUTTON (WHATSAPP/COMMUNITY) -->
+  <div class="fixed bottom-6 left-6 z-40">
+    <a href="https://www.instagram.com/yazdanacademy" target="_blank" rel="noopener noreferrer" 
+       class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-dark-800/90 hover:bg-dark-800 border border-brand-500/40 text-slate-200 text-xs font-semibold shadow-card backdrop-blur-md hover:scale-105 transition-all">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span>Connect with Yazdan</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

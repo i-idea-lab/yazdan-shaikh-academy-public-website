@@ -1,0 +1,66 @@
+/* Custom styles and enhancements for Yazdan Shaikh Academy */
+
+@layer base {
+  body {
+    background-color: #0B0F17;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2942;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10B981;
+}
+
+/* Smooth Focus Outlines */
+input:focus, select:focus, textarea:focus, button:focus-visible {
+  outline: 2px solid #10B981;
+  outline-offset: 2px;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(17, 23, 38, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Subtle glowing accents */
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #A7F3D0 0%, #10B981 50%, #EAB308 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card hover animation */
+.course-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.15);
+}
+
+/* FAQ transition */
+.faq-answer {
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-chevron.rotate-180 {
+  transform: rotate(180deg);
+}
