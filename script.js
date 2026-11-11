@@ -36,35 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Program Filtering Tabs
-  const filterBtns = document.querySelectorAll('.course-tab-btn');
-  const courseCards = document.querySelectorAll('.course-card');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => {
-        b.classList.remove('active', 'bg-brand-500', 'text-white', 'shadow-glow');
-        b.classList.add('bg-dark-800', 'text-slate-300');
-      });
-      btn.classList.add('active', 'bg-brand-500', 'text-white', 'shadow-glow');
-      btn.classList.remove('bg-dark-800', 'text-slate-300');
-
-      const filterValue = btn.getAttribute('data-filter');
-
-      courseCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filterValue === 'all' || category === filterValue) {
-          card.style.display = 'flex';
-          card.classList.remove('opacity-0', 'scale-95');
-          card.classList.add('opacity-100', 'scale-100');
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-
-  // 5. FAQ Accordion
+  // 4. FAQ Accordion
   const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
