@@ -64,3 +64,80 @@ input:focus, select:focus, textarea:focus, button:focus-visible {
 .faq-chevron.rotate-180 {
   transform: rotate(180deg);
 }
+
+/* Streaks animation for Apply / WhatsApp CTA button */
+.btn-streak {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-streak::after {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: -65%;
+  width: 65%;
+  height: 180%;
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(52, 211, 153, 0.08) 22%,
+    rgba(167, 243, 208, 0.34) 36%,
+    rgba(255, 255, 255, 0.5) 44%,
+    rgba(250, 204, 21, 0.3) 53%,
+    transparent 66%,
+    rgba(255, 255, 255, 0.18) 76%,
+    transparent 86%
+  );
+  transform: translateX(-120%) skewX(-20deg);
+  animation: btn-streaks-sweep 3.2s cubic-bezier(0.25, 0.8, 0.25, 1) infinite;
+}
+
+.btn-streak:hover::after {
+  animation-duration: 1.4s;
+}
+
+.btn-streak-border {
+  background-size: 220% 220%;
+  animation: btn-streak-border-flow 4s linear infinite;
+}
+
+@keyframes btn-streaks-sweep {
+  0% {
+    transform: translateX(-120%) skewX(-20deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  52% {
+    transform: translateX(340%) skewX(-20deg);
+    opacity: 1;
+  }
+  58%, 100% {
+    transform: translateX(340%) skewX(-20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes btn-streak-border-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-streak::after,
+  .btn-streak-border {
+    animation: none;
+  }
+}
