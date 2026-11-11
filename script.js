@@ -89,14 +89,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Placeholder Inquiry Form Submission (no backend wired)
+  // 6. WhatsApp Prefilled Inquiry Form Submission (+91 86001 50109)
   const enrollmentForm = document.getElementById('enrollment-form');
   if (enrollmentForm) {
     enrollmentForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
+      const name = document.getElementById('user-name')?.value.trim() || '';
+      const email = document.getElementById('user-email')?.value.trim() || '';
+      const phone = document.getElementById('user-phone')?.value.trim() || '';
+      const interest = document.getElementById('course-interest')?.value.trim() || 'Screening Inquiry';
+      const notes = document.getElementById('user-notes')?.value.trim() || '';
+
+      const lines = [
+        'Assalamu Alaikum, I would like to submit a screening inquiry for Yazdan Academy.',
+        '',
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `WhatsApp Number: ${phone}`,
+        `Interested Area: ${interest}`
+      ];
+
+      if (notes) {
+        lines.push(`Background / Note: ${notes}`);
+      }
+
+      const whatsappUrl = `https://wa.me/918600150109?text=${encodeURIComponent(lines.join('\n'))}`;
+      const openedWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      if (!openedWindow) {
+        window.location.href = whatsappUrl;
+      }
+
       closeEnrollModal();
-      showToast('Placeholder form only — no data was sent. Please apply on yazdanshaikhacademy.com.');
+      showToast('Opening WhatsApp with your prefilled inquiry for +91 86001 50109.');
       enrollmentForm.reset();
     });
   }
