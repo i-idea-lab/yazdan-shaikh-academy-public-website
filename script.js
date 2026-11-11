@@ -61,6 +61,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 5. YouTube Facade Cards (Lazy Iframe Swap on Click)
+  document.querySelectorAll('.youtube-facade-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const videoId = btn.getAttribute('data-video-id');
+      const title = btn.getAttribute('data-title') || 'Yazdan Academy YouTube Video';
+      if (!videoId || !btn.parentElement) return;
+
+      const iframe = document.createElement('iframe');
+      iframe.className = 'w-full h-full border-0';
+      iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0`;
+      iframe.title = title;
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allowFullscreen = true;
+
+      btn.parentElement.replaceChild(iframe, btn);
+    });
+  });
+
   // 6. WhatsApp Prefilled Inquiry Form Submission (+91 86001 50109)
   const enrollmentForm = document.getElementById('enrollment-form');
   if (enrollmentForm) {
@@ -130,11 +149,59 @@ function closeEnrollModal() {
   }
 }
 
-// Close on backdrop click
+// Custom Video Lightbox Modal Helpers
+function openCustomVideoModal(videoSrc, posterSrc, title = 'Yazdan Academy Video') {
+  const modal = document.getElementById('video-modal');
+  const player = document.getElementById('custom-video-player');
+  const titleEl = document.getElementById('video-modal-title');
+  if (!modal || !player) return;
+
+  if (titleEl) titleEl.textContent = title;
+  if (posterSrc) player.setAttribute('poster', posterSrc);
+  player.src = videoSrc;
+  player.load();
+
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+
+  const playPromise = player.play();
+  if (playPromise && typeof playPromise.catch === 'function') {
+    playPromise.catch(() => {});
+  }
+}
+
+function closeCustomVideoModal() {
+  const modal = document.getElementById('video-modal');
+  const player = document.getElementById('custom-video-player');
+  if (player) {
+    player.pause();
+    player.removeAttribute('src');
+    player.load();
+  }
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Close modals on backdrop click or Escape key
 window.addEventListener('click', (e) => {
-  const modal = document.getElementById('enroll-modal');
-  if (e.target === modal) {
+  const enrollModal = document.getElementById('enroll-modal');
+  const videoModal = document.getElementById('video-modal');
+  if (e.target === enrollModal) {
     closeEnrollModal();
+  }
+  if (e.target === videoModal) {
+    closeCustomVideoModal();
+  }
+});
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeEnrollModal();
+    closeCustomVideoModal();
   }
 });
 

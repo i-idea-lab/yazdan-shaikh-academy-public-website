@@ -124,6 +124,7 @@
           <a href="#courses" class="hover:text-brand-400 transition-colors">Programs</a>
           <a href="#why-us" class="hover:text-brand-400 transition-colors">Mentorship</a>
           <a href="#curriculum" class="hover:text-brand-400 transition-colors">Curriculum</a>
+          <a href="#videos" class="hover:text-brand-400 transition-colors">Videos</a>
           <a href="#testimonials" class="hover:text-brand-400 transition-colors">Testimonials</a>
           <a href="#community" class="hover:text-brand-400 transition-colors">Community</a>
           <a href="#faq" class="hover:text-brand-400 transition-colors">FAQ</a>
@@ -174,6 +175,7 @@
       <a href="#courses" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Programs</a>
       <a href="#why-us" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Mentorship</a>
       <a href="#curriculum" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Curriculum</a>
+      <a href="#videos" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Videos</a>
       <a href="#testimonials" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Testimonials</a>
       <a href="#community" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">Community</a>
       <a href="#faq" class="block py-2 text-base font-medium text-slate-200 hover:text-brand-400">FAQ</a>
@@ -740,6 +742,488 @@
       </div>
     </section>
 
+    <!-- VIDEOS & STUDENT REELS SECTION (2 FORMATS: YOUTUBE FACADE + SELF-HOSTED MP4) -->
+    <section id="videos" class="py-24 relative overflow-hidden border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-semibold uppercase tracking-wider">
+            Video Showcase
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+            Academy Series &amp; Student Videos
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            Organized in two formats for fast loading: lazy-loaded <strong>YouTube facade cards</strong> for YouTube series, and <strong>self-hosted custom MP4 reels</strong> served from <code class="text-slate-300 text-xs bg-dark-800 px-1.5 py-0.5 rounded">assets/videos/</code>.
+          </p>
+        </div>
+
+        <!-- FORMAT 1: YOUTUBE FACADE CARDS -->
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-red-400">Format 1 &bull; YouTube Facade Cards</span>
+              <h3 class="font-display text-2xl font-bold text-white mt-1">YouTube Classes, Series &amp; Stories</h3>
+            </div>
+            <a href="https://www.youtube.com/@yazdanshaikhacademy" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-400 hover:text-brand-300 flex items-center gap-1.5">
+              <span>Full @yazdanshaikhacademy Channel</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <!-- YT Card 1 (Linked on Live Site) -->
+            <div class="rounded-2xl bg-dark-850/90 border border-slate-800 hover:border-red-500/40 overflow-hidden transition flex flex-col">
+              <div class="aspect-video bg-dark-900 relative overflow-hidden">
+                <button type="button" class="youtube-facade-btn relative w-full h-full block group focus:outline-none" data-video-id="LEeBspZaAKM" data-title="Pro Editors Day 18 — Hamza Shaikh" aria-label="Play Pro Editors Day 18 on YouTube">
+                  <img src="https://i.ytimg.com/vi/LEeBspZaAKM/hqdefault.jpg" alt="Pro Editors Day 18 thumbnail" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition flex items-center justify-center">
+                    <span class="w-12 h-12 rounded-full bg-red-600/95 group-hover:scale-110 text-white flex items-center justify-center shadow-lg transition">
+                      <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <span class="inline-block px-2 py-0.5 rounded bg-red-500/15 text-red-300 text-[10px] font-semibold uppercase">Featured on Live Site</span>
+                  <h4 class="font-bold text-sm text-white mt-1.5 line-clamp-2">Pro Editors Day 18 — Hamza Shaikh</h4>
+                </div>
+                <a href="https://youtu.be/LEeBspZaAKM" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 pt-1">
+                  <span>Open on YouTube</span><i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- YT Card 2 -->
+            <div class="rounded-2xl bg-dark-850/90 border border-slate-800 hover:border-red-500/40 overflow-hidden transition flex flex-col">
+              <div class="aspect-video bg-dark-900 relative overflow-hidden">
+                <button type="button" class="youtube-facade-btn relative w-full h-full block group focus:outline-none" data-video-id="IBhUG5XWnUM" data-title="Yazdan Academy Student Earned Rs. 1,50,000 from Video Editing | Ilma Khan" aria-label="Play Ilma Khan Success Story on YouTube">
+                  <img src="https://i.ytimg.com/vi/IBhUG5XWnUM/hqdefault.jpg" alt="Ilma Khan Success Story thumbnail" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition flex items-center justify-center">
+                    <span class="w-12 h-12 rounded-full bg-red-600/95 group-hover:scale-110 text-white flex items-center justify-center shadow-lg transition">
+                      <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <span class="inline-block px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 text-[10px] font-semibold uppercase">Student Story</span>
+                  <h4 class="font-bold text-sm text-white mt-1.5 line-clamp-2">Earned Rs. 1,50,000 from Video Editing | Ilma Khan</h4>
+                </div>
+                <a href="https://www.youtube.com/watch?v=IBhUG5XWnUM" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 pt-1">
+                  <span>Open on YouTube</span><i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- YT Card 3 -->
+            <div class="rounded-2xl bg-dark-850/90 border border-slate-800 hover:border-red-500/40 overflow-hidden transition flex flex-col">
+              <div class="aspect-video bg-dark-900 relative overflow-hidden">
+                <button type="button" class="youtube-facade-btn relative w-full h-full block group focus:outline-none" data-video-id="3dAQiYq9km8" data-title="Yazdan Academy Student Earned 55,000 with Jewellery Business in 2 months | Noor Fatima" aria-label="Play Noor Fatima Success Story on YouTube">
+                  <img src="https://i.ytimg.com/vi/3dAQiYq9km8/hqdefault.jpg" alt="Noor Fatima Success Story thumbnail" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition flex items-center justify-center">
+                    <span class="w-12 h-12 rounded-full bg-red-600/95 group-hover:scale-110 text-white flex items-center justify-center shadow-lg transition">
+                      <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <span class="inline-block px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 text-[10px] font-semibold uppercase">Student Story</span>
+                  <h4 class="font-bold text-sm text-white mt-1.5 line-clamp-2">Earned 55,000 with Jewellery Business in 2 Months | Noor Fatima</h4>
+                </div>
+                <a href="https://www.youtube.com/watch?v=3dAQiYq9km8" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 pt-1">
+                  <span>Open on YouTube</span><i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- YT Card 4 -->
+            <div class="rounded-2xl bg-dark-850/90 border border-slate-800 hover:border-red-500/40 overflow-hidden transition flex flex-col">
+              <div class="aspect-video bg-dark-900 relative overflow-hidden">
+                <button type="button" class="youtube-facade-btn relative w-full h-full block group focus:outline-none" data-video-id="oX-gAbBIyFU" data-title="7 Layers Of Money | Quran Ke Mutabiq Rizq Kaise Aata Hai?" aria-label="Play 7 Layers Of Money on YouTube">
+                  <img src="https://i.ytimg.com/vi/oX-gAbBIyFU/hqdefault.jpg" alt="7 Layers Of Money thumbnail" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition flex items-center justify-center">
+                    <span class="w-12 h-12 rounded-full bg-red-600/95 group-hover:scale-110 text-white flex items-center justify-center shadow-lg transition">
+                      <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <span class="inline-block px-2 py-0.5 rounded bg-brand-500/15 text-brand-300 text-[10px] font-semibold uppercase">Digital Skills &amp; Rizq</span>
+                  <h4 class="font-bold text-sm text-white mt-1.5 line-clamp-2">7 Layers Of Money | Quran Ke Mutabiq Rizq Kaise Aata Hai?</h4>
+                </div>
+                <a href="https://www.youtube.com/watch?v=oX-gAbBIyFU" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 pt-1">
+                  <span>Open on YouTube</span><i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- YT Card 5 -->
+            <div class="rounded-2xl bg-dark-850/90 border border-slate-800 hover:border-red-500/40 overflow-hidden transition flex flex-col">
+              <div class="aspect-video bg-dark-900 relative overflow-hidden">
+                <button type="button" class="youtube-facade-btn relative w-full h-full block group focus:outline-none" data-video-id="xRE_sHQU_FU" data-title="Prophet Series | Adam AS - Episode 1" aria-label="Play Prophet Series Episode 1 on YouTube">
+                  <img src="https://i.ytimg.com/vi/xRE_sHQU_FU/hqdefault.jpg" alt="Prophet Series Adam AS Episode 1 thumbnail" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  <span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-white text-[10px] font-semibold">14:27</span>
+                  <div class="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition flex items-center justify-center">
+                    <span class="w-12 h-12 rounded-full bg-red-600/95 group-hover:scale-110 text-white flex items-center justify-center shadow-lg transition">
+                      <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <span class="inline-block px-2 py-0.5 rounded bg-gold-500/15 text-gold-300 text-[10px] font-semibold uppercase">Prophetic History Series</span>
+                  <h4 class="font-bold text-sm text-white mt-1.5 line-clamp-2">Prophet Series | Adam (AS) — Episode 1</h4>
+                </div>
+                <a href="https://www.youtube.com/watch?v=xRE_sHQU_FU" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 pt-1">
+                  <span>Open on YouTube</span><i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- YT Card 6 -->
+            <div class="rounded-2xl bg-dark-850/90 border border-slate-800 hover:border-red-500/40 overflow-hidden transition flex flex-col">
+              <div class="aspect-video bg-dark-900 relative overflow-hidden">
+                <button type="button" class="youtube-facade-btn relative w-full h-full block group focus:outline-none" data-video-id="HwoKIg4igms" data-title="Arabic Learning From Zero (Day 1) | Quran Urdu Translation Learning" aria-label="Play Arabic Learning From Zero Day 1 on YouTube">
+                  <img src="https://i.ytimg.com/vi/HwoKIg4igms/hqdefault.jpg" alt="Arabic Learning From Zero Day 1 thumbnail" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  <span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-white text-[10px] font-semibold">58:29</span>
+                  <div class="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition flex items-center justify-center">
+                    <span class="w-12 h-12 rounded-full bg-red-600/95 group-hover:scale-110 text-white flex items-center justify-center shadow-lg transition">
+                      <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <span class="inline-block px-2 py-0.5 rounded bg-gold-500/15 text-gold-300 text-[10px] font-semibold uppercase">Quranic Translation Series</span>
+                  <h4 class="font-bold text-sm text-white mt-1.5 line-clamp-2">Arabic Learning From Zero (Day 1) | Quran Urdu Translation</h4>
+                </div>
+                <a href="https://www.youtube.com/watch?v=HwoKIg4igms" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 pt-1">
+                  <span>Open on YouTube</span><i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- YT Card 7 -->
+            <div class="rounded-2xl bg-dark-850/90 border border-slate-800 hover:border-red-500/40 overflow-hidden transition flex flex-col">
+              <div class="aspect-video bg-dark-900 relative overflow-hidden">
+                <button type="button" class="youtube-facade-btn relative w-full h-full block group focus:outline-none" data-video-id="XwNH7RpYvCQ" data-title="Arabic Tajweed Class 1 | Yazdan Academy Tajweed Class" aria-label="Play Arabic Tajweed Class 1 on YouTube">
+                  <img src="https://i.ytimg.com/vi/XwNH7RpYvCQ/hqdefault.jpg" alt="Arabic Tajweed Class 1 thumbnail" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  <span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-white text-[10px] font-semibold">1:04:46</span>
+                  <div class="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition flex items-center justify-center">
+                    <span class="w-12 h-12 rounded-full bg-red-600/95 group-hover:scale-110 text-white flex items-center justify-center shadow-lg transition">
+                      <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <span class="inline-block px-2 py-0.5 rounded bg-gold-500/15 text-gold-300 text-[10px] font-semibold uppercase">Tajweed Series</span>
+                  <h4 class="font-bold text-sm text-white mt-1.5 line-clamp-2">Arabic Tajweed Class 1 | Yazdan Academy</h4>
+                </div>
+                <a href="https://www.youtube.com/watch?v=XwNH7RpYvCQ" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 pt-1">
+                  <span>Open on YouTube</span><i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- YT Card 8 -->
+            <div class="rounded-2xl bg-dark-850/90 border border-slate-800 hover:border-red-500/40 overflow-hidden transition flex flex-col">
+              <div class="aspect-video bg-dark-900 relative overflow-hidden">
+                <button type="button" class="youtube-facade-btn relative w-full h-full block group focus:outline-none" data-video-id="mPZV92_Q_3A" data-title="Arabic Learning From Zero (Day 46) | Namaz Translation Surah Falaq" aria-label="Play Namaz Translation Surah Falaq on YouTube">
+                  <img src="https://i.ytimg.com/vi/mPZV92_Q_3A/hqdefault.jpg" alt="Namaz Translation Surah Falaq thumbnail" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  <span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-white text-[10px] font-semibold">53:06</span>
+                  <div class="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition flex items-center justify-center">
+                    <span class="w-12 h-12 rounded-full bg-red-600/95 group-hover:scale-110 text-white flex items-center justify-center shadow-lg transition">
+                      <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <span class="inline-block px-2 py-0.5 rounded bg-gold-500/15 text-gold-300 text-[10px] font-semibold uppercase">Quranic Tafsir &amp; Translation</span>
+                  <h4 class="font-bold text-sm text-white mt-1.5 line-clamp-2">Day 46 | Namaz Translation &amp; Surah Falaq Tafsir</h4>
+                </div>
+                <a href="https://www.youtube.com/watch?v=mPZV92_Q_3A" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 pt-1">
+                  <span>Open on YouTube</span><i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FORMAT 2: CUSTOM HOSTED MP4 VIDEOS IN assets/videos/ -->
+        <div class="space-y-6 pt-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-400">Format 2 &bull; Self-Hosted Reels (assets/videos/)</span>
+              <h3 class="font-display text-2xl font-bold text-white mt-1">Student Feedback &amp; Highlight Clips (16 Videos)</h3>
+            </div>
+            <span class="text-xs text-slate-400">
+              Click any clip to play locally from <code class="text-slate-300 bg-dark-800 px-1.5 py-0.5 rounded">assets/videos/</code>
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-01.mp4', 'assets/videos/video-01.jpg', 'Clip #01 — Founder Highlight: Yazdan Academy Students (0:36)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-01.jpg" alt="Clip 01 — Yazdan Academy Students" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">0:36</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-brand-300">Founder Clip</span>
+                <span class="block text-xs font-semibold text-white truncate">Yazdan Academy Students</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-02.mp4', 'assets/videos/video-02.jpg', 'Clip #02 — Student Feedback Reel (1:04)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-02.jpg" alt="Clip 02 — Student Feedback Reel" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">1:04</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">My Students</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #02</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-03.mp4', 'assets/videos/video-03.jpg', 'Clip #03 — Student Feedback Reel (1:14)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-03.jpg" alt="Clip 03 — Student Feedback Reel" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">1:14</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">My Students</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #03</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-04.mp4', 'assets/videos/video-04.jpg', 'Clip #04 — Student Feedback Reel (1:06)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-04.jpg" alt="Clip 04 — Student Feedback Reel" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">1:06</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">My Students</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #04</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-05.mp4', 'assets/videos/video-05.jpg', 'Clip #05 — Student Feedback (1:13)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-05.jpg" alt="Clip 05 — Student Feedback" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">1:13</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #05</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-06.mp4', 'assets/videos/video-06.jpg', 'Clip #06 — Student Feedback (0:54)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-06.jpg" alt="Clip 06 — Student Feedback" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">0:54</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #06</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-07.mp4', 'assets/videos/video-07.jpg', 'Clip #07 — Student Review: Khansa (0:49)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-07.jpg" alt="Clip 07 — Student Review Khansa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">0:49</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Review — Khansa</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-08.mp4', 'assets/videos/video-08.jpg', 'Clip #08 — Student Reel (1:03)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-08.jpg" alt="Clip 08 — Student Reel" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">1:03</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Reel #08</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-09.mp4', 'assets/videos/video-09.jpg', 'Clip #09 — Student Video for Yazdan Academy (1:07)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-09.jpg" alt="Clip 09 — Student Video" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">1:07</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #09</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-10.mp4', 'assets/videos/video-10.jpg', 'Clip #10 — Student Feedback (1:09)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-10.jpg" alt="Clip 10 — Student Feedback" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">1:09</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #10</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-11.mp4', 'assets/videos/video-11.jpg', 'Clip #11 — Detailed Student Review (3:05)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-11.jpg" alt="Clip 11 — Detailed Student Review" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">3:05</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Review #11</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-12.mp4', 'assets/videos/video-12.jpg', 'Clip #12 — Student Feedback (0:51)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-12.jpg" alt="Clip 12 — Student Feedback" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">0:51</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #12</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-13.mp4', 'assets/videos/video-13.jpg', 'Clip #13 — Student Feedback: Nadiya Khatoon (0:55)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-13.jpg" alt="Clip 13 — Student Feedback Nadiya Khatoon" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">0:55</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Nadiya Khatoon</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-14.mp4', 'assets/videos/video-14.jpg', 'Clip #14 — Student Review (2:00)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-14.jpg" alt="Clip 14 — Student Review" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">2:00</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Review #14</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-15.mp4', 'assets/videos/video-15.jpg', 'Clip #15 — Student Feedback (0:53)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-15.jpg" alt="Clip 15 — Student Feedback" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">0:53</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #15</span>
+              </div>
+            </button>
+
+            <button type="button" onclick="openCustomVideoModal('assets/videos/video-16.mp4', 'assets/videos/video-16.jpg', 'Clip #16 — Student Feedback (0:52)')" class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-850 border border-slate-800 hover:border-brand-500/60 text-left transition">
+              <img src="assets/videos/video-16.jpg" alt="Clip 16 — Student Feedback" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-semibold">0:52</span>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="w-12 h-12 rounded-full bg-brand-500/90 group-hover:scale-110 text-white flex items-center justify-center shadow-glow transition">
+                  <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <span class="block text-[10px] font-bold uppercase text-emerald-300">Student Video</span>
+                <span class="block text-xs font-semibold text-white truncate">Student Feedback #16</span>
+              </div>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- STUDENT TESTIMONIALS (PLACEHOLDER UNTIL VERIFIED TESTIMONIALS SUPPLIED) -->
     <section id="testimonials" class="py-24 relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1030,6 +1514,7 @@
             <li><a href="#about" class="hover:text-brand-400 transition">About</a></li>
             <li><a href="#courses" class="hover:text-brand-400 transition">Programs</a></li>
             <li><a href="#curriculum" class="hover:text-brand-400 transition">Curriculum</a></li>
+            <li><a href="#videos" class="hover:text-brand-400 transition">Videos</a></li>
             <li><a href="#testimonials" class="hover:text-brand-400 transition">Testimonials</a></li>
             <li><a href="#faq" class="hover:text-brand-400 transition">FAQ</a></li>
           </ul>
@@ -1124,6 +1609,21 @@
         </form>
       </div>
 
+    </div>
+  </div>
+
+  <!-- CUSTOM VIDEO PLAYER LIGHTBOX MODAL -->
+  <div id="video-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-dark-950/90 backdrop-blur-md">
+    <div class="relative w-full max-w-md rounded-2xl bg-dark-900 border border-slate-700/80 shadow-2xl overflow-hidden">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-slate-800">
+        <h4 id="video-modal-title" class="text-xs sm:text-sm font-semibold text-white truncate pr-4">Yazdan Academy Video</h4>
+        <button type="button" onclick="closeCustomVideoModal()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-dark-800 transition" aria-label="Close video player">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="bg-black flex items-center justify-center">
+        <video id="custom-video-player" controls playsinline preload="none" class="w-full max-h-[78vh] bg-black"></video>
+      </div>
     </div>
   </div>
 
